@@ -1,4 +1,5 @@
-## Build An Alexa High Low Game Skill using ASK Python SDK
+Build An Alexa High Low Game Skill using ASK Python SDK
+=========================================
 
 This Alexa sample skill is a template for a basic high-low game skill. The high low game is a game where the player tries to guess the target number between 1 to 100. After each incorrect guess, the player is informed if the target number is higher or lower than their current guess. This continues until the target number is guessed or the player gives up. This sample Alexa Skill is written in Python and demonstrates the use of session and persistent attributes.
 
@@ -16,13 +17,6 @@ If this is your first time here, you're new to Alexa Skills Development, or you'
 
 Be sure to take a look at the [Additional Resources](#additional-resources)!
 
-
-<!--
-## About
-**Note:** The rest of this readme assumes you have your developer environment ready to go and that you have some familiarity with [ASK Python SDK](https://github.com/alexa-labs/alexa-skills-kit-sdk-for-python), [AWS](https://aws.amazon.com/), and the [ASK Developer Portal](https://developer.amazon.com/alexa-skills-kit). If not, [click here](./instructions/0-intro.md) for a more detailed walkthrough.
-!-->
-
-
 ### Usage
 
 ```text
@@ -36,101 +30,10 @@ Five
 ```
 
 ### Repository Contents	 
-* `/lambda/` - Back-End Logic for the Alexa Skill hosted on [AWS Lambda](https://aws.amazon.com/lambda/)
+* `/lambda` - Back-End Logic for the Alexa Skill hosted on [AWS Lambda](https://aws.amazon.com/lambda/)
 * `/models` - Voice User Interface and Language Specific Interaction Models
 * `/instructions` - Step-by-Step Instructions for Getting Started
 
-<!--
-## Setup w/ ASK CLI
-
-### Pre-requisites
-
-* Node.js (> v4.3)
-* Register for an [AWS Account](https://aws.amazon.com/)
-* Register for an [Amazon Developer Account](https://developer.amazon.com/)
-* Install and Setup [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
-
-### Installation
-1. Clone the repository.
-
-	```bash
-	$ git clone https://github.com/alexa/skill-sample-nodejs-highlowgame/
-	```
-
-2. Navigating into the repository's root folder.
-
-	```bash
-	$ cd skill-sample-nodejs-highlowgame
-	```
-
-3. Install npm dependencies by navigating into the `lambda/custom` directory and running the npm command: `npm install`
-
-	```bash
-	$ cd lambda/custom
-	$ npm install
-	```
-
-
-### Deployment
-
-ASK CLI will create the skill and the lambda function for you. The Lambda function will be created in ```us-east-1 (Northern Virginia)``` by default.
-
-1. Deploy the skill and the lambda function in one step by running the following command:
-
-	```bash
-	$ ask deploy
-	```
-
-2. Once deployed, additional permissions need to be added to the AWS IAM role being used by the skill since it is persisting data in Amazon DynamoDB.  Navigate to the [AWS IAM console](https://console.aws.amazon.com/iam/home#/roles).
-
-	> _Note: We are adding the full access policy here for convenience.  For a production skill, you should use a more targeted policy restricting access to just the required resources.  Refer to the [DynamoDB documentation](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/access-control-overview.html) for more details._
-
-	1. Locate the role for your skill (by default, it is named ```ask-lambda-<your skill name>```).
-	1. Click on the role, then click **Attach Policy**.
-	1. Search for **AmazonDynamoDBFullAccess** and click the check box next to it.
-	1. Click **Attach Policy**.
-
-### Testing
-
-1. To test, you need to login to Alexa Developer Console, and enable the "Test" switch on your skill from the "Test" Tab.
-
-2. Simulate verbal interaction with your skill through the command line using the following example:
-
-	```bash
-	 $ ask simulate -l en-US -t "start high low game"
-
-	 ✓ Simulation created for simulation id: 4a7a9ed8-94b2-40c0-b3bd-fb63d9887fa7
-	◡ Waiting for simulation response{
-	  "status": "SUCCESSFUL",
-	  ...
-	 ```
-
-> _Note: if you did not add the DynamoDB permission as described in the previous step, the skill will return an error and you will see an error in your CloudWatch Logs reporting:  ...```Coud not read item```...```is not authorized to perform: dynamodb:GetItem```..._
-
-3. Once the "Test" switch is enabled, your skill can be tested on devices associated with the developer account as well. Speak to Alexa from any enabled device, from your browser at [echosim.io](https://echosim.io/welcome), or through your Amazon Mobile App and say :
-
-	```text
-	Alexa, start high low game
-	```
-
-## Customization
-
-1. ```./skill.json```
-
-   Change the skill name, example phrase, icons, testing instructions etc ...
-
-   Remember that some of the information is locale-specific and must be changed for each locale (en-GB and en-US)
-
-   See the Skill [Manifest Documentation](https://developer.amazon.com/docs/smapi/skill-manifest.html) for more information.
-
-2. ```./lambda/custom/index.js```
-
-   Modify messages, and other strings (and perhaps the number range) from the source code to customize the skill.
-
-3. ```./models/*.json```
-
-	Change the model definition to replace the invocation name and, if necessary for your customization, the sample phrases for each intent.  Repeat the operation for each locale you are planning to support.
- !-->
 ## Additional Resources
 
 ### Community

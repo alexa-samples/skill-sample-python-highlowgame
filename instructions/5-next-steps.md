@@ -1,15 +1,35 @@
-# Build An Alexa Hello World Skill
+# Build An Alexa High Low Game Skill using ASK Python SDK
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
 
 [![Voice User Interface](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/1-locked._TTH_.png)](./1-voice-user-interface.md)[![Lambda Function](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/2-locked._TTH_.png)](./2-lambda-function.md)[![Connect VUI to Code](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/3-locked._TTH_.png)](./3-connect-vui-to-code.md)[![Testing](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/4-locked._TTH_.png)](./4-testing.md)[![Next Steps](https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/navigation/5-on._TTH_.png)](./5-next-steps.md)
 
 ## Customization / Next Steps
 
-At this point, you should have a working copy of our Hello World skill. 
+At this point, you should have a working copy of our High Low Game skill.  In order to make it your own, you will need to customize it with some responses that you create.  Here are the things you will need to change:
 
-Normally, if you were buildling a skill from one of our templates, you would customize it and make it your own (as opposed to a clone of our template).  After that, you would certify and publish the skill.  Given that this is the Hello World skill, you won't be doing that.  Instead, check out some of these other templates which will start to show you more of the features of the Alexa Skills Kit.
+1.  **Update your sample utterances.** There are some sample utterances for NumberGuessIntent.  You need to update this list of utterances to for a robust voice experience. **Remember that if you are creating this skill for another language other than English, your sample utterances need to be written in that language, not English.**
 
-* [High Low Game Skill](https://github.com/alexa-labs/skill-sample-python-highlowgame) - the High Low Game skill is a simple example and a great next step after Hello World. The skill asks user to guess a number and tells if the guessed number is higher or lower than the correct guess. 
-* [Quiz Skill](https://github.com/alexa-labs/skill-sample-python-quiz-game) - a skill where the user can ask for information on one of the states of US and play a quiz around the states. This sample skill shows off the render template directive usage.
-<!-- * [Trivia Quiz Game](https://github.com/alexa/skill-sample-nodejs-trivia) - this skill asks the user a series of questions, tracks right and wrong answers and provides a score at the end of the game.
-* [Fact w/In Skill Purchasing](https://github.com/alexa/skill-sample-nodejs-fact-in-skill-purchases) - takes the Fact skill and adds in skill purchasing to it. --!>
+  1. **Click the "Save" button when you have completed.**
+
+3.  **New sentences to respond to your users.** There are several sentences and responses that you will want to customize for your skill.
+
+    1.  **Go back to your copy of [lambda_function.py](../lambda/lambda_function.py).**
+
+    2.  **Look for lines like this: speech_text = ("Welcome to the High Low guessing game. You have played {} times. "."** These are strings that hold phrases for Alexa to respond with.  Customize them to make it as varied and conversational as time allows.
+
+    3.  **Continue through lambda_function.py until you reach the bottom of the file.**  This will ensure that you cover each of the Alexa responses that you need to update.
+
+4.  **New language.** If you are creating this skill for another language other than English, you will need to make sure Alexa's responses are also in that language.
+
+    *  For example, if you are creating your skill in German, every single response that Alexa makes has to be in German.  You can't use English responses or your skill will fail certification.
+
+5. **Updated code.** Once you have made the updates, you need to upload the latest data into Lambda before moving ahead with skill testing and publishing. Zip the contents of the SDK installation folder with the updated skill code and upload it on Lambda, as discussed in the "**Finish configuring your function**" step in [Lambda setup documentation](./2-lambda-function.md). Test your skill through the Alexa Simulator on the developer portal, with the updated changes.    
+
+6.  **Once you have made the updates listed on this page, you can click "Next" to move on to Publishing and Certification of your skill.**
+
+    <a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/3-7-next-button._TTH_.png" /></a>
+
+<br/><br/>
+<a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png" /></a>
+
+<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
