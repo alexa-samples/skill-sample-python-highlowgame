@@ -27,9 +27,5 @@ At this point, you should have a working copy of our High Low Game skill.  In or
 
 6.  **Once you have made the updates listed on this page, you can click "Next" to move on to Publishing and Certification of your skill.**
 
-    <a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/3-7-next-button._TTH_.png" /></a>
-
 <br/><br/>
 <a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png" /></a>
-
-<img height="1" width="1" src="https://www.facebook.com/tr?id=1847448698846169&ev=PageView&noscript=1"/>
