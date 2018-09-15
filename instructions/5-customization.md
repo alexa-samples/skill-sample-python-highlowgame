@@ -5,7 +5,7 @@
 
 ## Customization / Next Steps
 
-At this point, you should have a working copy of our High Low Game skill.  In order to make it your own, you will need to customize it with some responses that you create.  Here are the things you will need to change:
+At this point, you should have a working copy of our High Low skill.  In order to make it your own, you will need to customize it with some responses that you create.  Here are the things you will need to change:
 
 1.  **Update your sample utterances.** There are some sample utterances for NumberGuessIntent.  You need to update this list of utterances to for a robust voice experience. **Remember that if you are creating this skill for another language other than English, your sample utterances need to be written in that language, not English.**
 
@@ -23,9 +23,9 @@ At this point, you should have a working copy of our High Low Game skill.  In or
 
     *  For example, if you are creating your skill in German, every single response that Alexa makes has to be in German.  You can't use English responses or your skill will fail certification.
 
-5. **Updated code.** Once you have made the updates, you need to upload the latest data into Lambda before moving ahead with skill testing and publishing. Zip the contents of the SDK installation folder with the updated skill code and upload it on Lambda, as discussed in the "**Finish configuring your function**" step in [Lambda setup documentation](./2-lambda-function.md). Test your skill through the Alexa Simulator on the developer portal, with the updated changes.    
+5.  **When you have replaced the data in `lambda_function.py`, you need to upload the latest data into Lambda.**  Copy the updated contents into the ``skill_env`` folder, zip the contents of the ``skill_env`` folder and upload it to AWS Lambda as discussed in the "**Finish configuring your function**" step in [Lambda setup documentation](./2-lambda-function.md). Test your skill through the Alexa Simulator on the developer portal, with the updated changes.    
 
-6.  **Once you have made the updates listed on this page, you can click "Next" to move on to Publishing and Certification of your skill.**
+6.  **Once you have made the updates listed on this page, you can click "Launch" in the top navigation to move on to Publishing and Certification of your skill.**
 
 <br/><br/>
 <a href="./6-publication.md"><img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/general/buttons/button_next_publication._TTH_.png" /></a>
