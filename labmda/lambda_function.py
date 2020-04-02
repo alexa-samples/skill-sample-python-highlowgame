@@ -13,7 +13,7 @@ from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 
 SKILL_NAME = 'High Low Game'
-sb = StandardSkillBuilder(table_name="High-Low-Game", auto_create_table=True)
+sb = StandardSkillBuilder(table_name="High-Low-Game", auto_create_table=False)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
