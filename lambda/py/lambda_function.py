@@ -3,7 +3,6 @@
 # This is a High Low Guess game Alexa Skill.
 # The skill serves as a simple sample on how to use the
 # persistence attributes and persistence adapter features in the SDK.
-import os
 import random
 import logging
 
@@ -14,7 +13,7 @@ from ask_sdk_core.handler_input import HandlerInput
 from ask_sdk_model import Response
 
 SKILL_NAME = 'High Low Game'
-sb = StandardSkillBuilder(table_name=os.environ["DYNAMODB_TABLE_NAME"], auto_create_table=False)
+sb = StandardSkillBuilder(table_name="High-Low-Game", auto_create_table=True)
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
