@@ -43,7 +43,7 @@ Five
 
 ### Tutorials & Guides
 
-* [Voice Design Guide](https://developer.amazon.com/designing-for-voice/) - A great resource for learning conversational and voice user interface design.
+* [Voice Design Guide](https://developer.amazon.com/fr/designing-for-voice/) - A great resource for learning conversational and voice user interface design.
 * [CodeAcademy: Learn Alexa](https://www.codecademy.com/learn/learn-alexa) - Learn how to build an Alexa Skill from within your browser with this beginner friendly tutorial on CodeAcademy!
 
 ### Documentation
